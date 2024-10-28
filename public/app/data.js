@@ -20,7 +20,7 @@ const bedding = [
         "img":"images/prod2.jpg"
     },
     {
-        "id": 3,
+        "id": 5,
         "name": "Bedding Leaves",
         "size": "single",
         "color": "green",
@@ -30,7 +30,7 @@ const bedding = [
         "img":"images/prod5.jpg"
     },
     {
-        "id": 4,
+        "id": 7,
         "name": "Bedding Starry Night",
         "size": "single",
         "color": "darkblue",
@@ -40,7 +40,7 @@ const bedding = [
         "img":"images/prod7.jpg"
     },
     {
-        "id": 5,
+        "id": 9,
         "name": "Bedding One Piece",
         "size": "queen",
         "color": "blue",
@@ -50,7 +50,7 @@ const bedding = [
         "img":"images/prod9.jpg"
     },
     {
-        "id": 6,
+        "id": 8,
         "name": "Bedding Doodle",
         "size": "king",
         "color": "white",
