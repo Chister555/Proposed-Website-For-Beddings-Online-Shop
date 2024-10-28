@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Beddings Online Shop | Contact Us</title>
+</head>
+<body class="bg-gray-100">
+    <div class="bg-primary">
+        <header class="py-2 shadow-sm bg-transparent z-10 relative">
+           <div class="container mx-auto flex items-center justify-between">
+              <!-- Logo -->
+              <section class="flex items-center">
+                 <a class="flex items-center space-x-20" href="#">
+                 <img src="./src/images/Bedding-Logo.png" alt="Logo" class="w-16">
+                 <span class="text-white h-12 text-3xl px-1 py-2 hover:text-black" style="font-family: 'Dancing Script', cursive;"></span>
+                 </a>
+              </section>
+              <!-- Navigation -->
+              <section class="absolute left-1/2 transform -translate-x-1/2">
+                 <div class="flex items-center space-x-6">
+                    <a href="index.html" class="text-white hover:text-black transition text-sm">HOME</a>
+                        <a href="shop.html" class="text-white hover:text-black transition text-sm">SHOP</a>
+                        <a href="index.html#featured" class="text-white hover:text-black transition text-sm">FEATURED</a>
+                        <a href="contact.html" class="text-white hover:text-black transition text-sm">CONTACT</a>
+                        <a href="messages.html" class="text-white hover:text-black transition text-sm">MESSAGES</a>
+                 </div>
+              </section>
+           </div>
+        </header>
+     </div>
+
+    <main class="container mx-auto py-16 flex flex-col items-center">
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full mb-6">
+            <h2 class="text-3xl font-medium text-center mb-6">Contact Us</h2>
+            <form id="contactForm" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="5" class="w-full p-2 border rounded" required></textarea>
+                </div>
+                <button type="submit" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition w-full">Send Message</button>
+            </form>
+            
+
+            <!-- Social Media Buttons -->
+            <div class="flex justify-center space-x-4 mt-6">
+                <a href="facebook.html" target="_blank" class="text-gray-700 hover:text-blue-600 transition">
+                    <i class="fab fa-facebook-f text-xl"></i>
+                </a>
+                <a href="insta.html" target="_blank" class="text-gray-700 hover:text-pink-500 transition">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="twitter.html" target="_blank" class="text-gray-700 hover:text-blue-400 transition">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+            </div>
+
+            <!-- Email Marketing Button -->
+            <div class="mt-6 text-center">
+                <a href="email.html" target="_blank" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition">Email Marketing</a>
+            </div>
+
+            <div class="mt-6 text-center">
+                <a href="customerList.html" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition">View Customer List</a>
+            </div>
+        </div>
+
+        <!-- Centered Map Section Below the Form -->
+        <div class="w-full h-64 mb-16">
+            <h3 class="text-xl font-semibold mb-4 text-center">Find Us Here</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31113.481872000798!2d120.58337637718266!3d15.14625400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bc6c92c0c46d5d%3A0x9fddaf1d96a8571f!2sHoly%20Angel%20University!5e0!3m2!1sen!2sph!4v1698175018441!5m2!1sen!2sph"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+
+    <footer class="bg-primary py-6">
+        <div class="container mx-auto text-center text-white">
+            <span>© 2023 Beddings Online Shop. All Rights Reserved.</span>
+        </div>
+    </footer>
+    <script src="./app/contact.js"></script>
+</body>
+</html>

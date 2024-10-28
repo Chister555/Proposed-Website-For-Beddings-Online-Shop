@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Customer Messages</title>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <div class="bg-primary">
+        <header class="py-2 shadow-sm bg-transparent z-10 relative">
+           <div class="container mx-auto flex items-center justify-between">
+              <!-- Logo -->
+              <section class="flex items-center">
+                 <a class="flex items-center space-x-20" href="#">
+                 <img src="./src/images/Bedding-Logo.png" alt="Logo" class="w-16">
+                 <span class="text-white h-12 text-3xl px-1 py-2 hover:text-black" style="font-family: 'Dancing Script', cursive;"></span>
+                 </a>
+              </section>
+              <!-- Navigation -->
+              <section class="absolute left-1/2 transform -translate-x-1/2">
+                <div class="flex items-center space-x-6">
+                    <a href="index.html" class="text-white hover:text-black transition text-sm">HOME</a>
+                    <a href="shop.html" class="text-white hover:text-black transition text-sm">SHOP</a>
+                    <a href="index.html#featured" class="text-white hover:text-black transition text-sm">FEATURED</a>
+                    <a href="contact.html" class="text-white hover:text-black transition text-sm">CONTACT</a>
+                    <a href="messages.html" class="text-white hover:text-black transition text-sm">MESSAGES</a>
+                </div>
+              </section>
+              
+           </div>
+        </header>
+     </div>
+
+    <div class="container mx-auto px-4 py-8 flex-grow">
+        <h1 class="text-2xl font-bold mb-4">Contact Us Messages</h1>
+        <p class="text-gray-600 mb-6">
+            Data Submitted by Customers!
+        </p>
+        <input
+            class="w-full p-2 mb-6 border border-gray-300 rounded-md focus:outline-none focus:border-blue-400"
+            type="text"
+            id="searchInput"
+            placeholder="Search messages..."
+            onkeyup="filterMessages()"
+        >
+        <div id="messageList" class="space-y-4"></div>
+    </div>
+
+    <footer class="bg-primary py-6">
+        <div class="container mx-auto text-center text-white">
+            <span>© 2023 Beddings Online Shop. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="./app/messages.js"></script>
+</body>
+</html>
