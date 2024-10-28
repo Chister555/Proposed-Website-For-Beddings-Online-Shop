@@ -68,6 +68,8 @@ function displayCartItems() {
             removeItem(index);
         });
     });
+
+    
 }
 
 
@@ -76,6 +78,20 @@ function removeItem(index) {
     saveCart(); 
     displayCartItems(); 
 }
+
+document.getElementById('checkoutButton').addEventListener('click', () => {
+    if (cart.length === 0) {
+        alert('Your cart is empty!');
+    } else {
+        alert('Proceeding to checkout...');
+        
+      
+        cart.length = 0;
+        saveCart();
+        displayCartItems();
+    }
+});
+
 
 // Function to add item to the cart
 function addToCart(item) {
